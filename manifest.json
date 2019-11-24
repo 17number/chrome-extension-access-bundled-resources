@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "chrome-extension-access-bundled-resources",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.google.co.jp/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "resources/*.png"
+  ]
+}
